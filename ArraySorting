@@ -16,18 +16,18 @@ public class InsertionSort {
         insertionSort1.InsertionSort();
     }
     public void InsertionSort(){
-        int j;
+        int k;
         char tempColumn;
         int tempRow;
         int i;
         
         MineLocations mineLocations = new MineLocations();
         
-        for (j = 1; j < mineLocations.mineLocation.length; j++)
+        for (k = 1; k < mineLocations.mineLocation.length; k++)
         {
-            tempColumn = mineLocations.mineLocation [j].column;
-            tempRow = mineLocations.mineLocation [j].row;
-            for(i = j - 1; (i >= 0 ) && (mineLocations.mineLocation[i].column > tempColumn|| 
+            tempColumn = mineLocations.mineLocation [k].column;
+            tempRow = mineLocations.mineLocation [k].row;
+            for(i = k - 1; (i >= 0 ) && (mineLocations.mineLocation[i].column > tempColumn|| 
                     (mineLocations.mineLocation[i].column == tempColumn && mineLocations.mineLocation[i].row > tempRow)); i--)
             {
                 mineLocations.mineLocation[i+1].column = mineLocations.mineLocation[i].column;

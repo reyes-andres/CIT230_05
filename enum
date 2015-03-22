@@ -1,0 +1,28 @@
+5 lines (28 sloc) 0.756 kb
+/*
+* To change this template, choose Tools | Templates
+* and open the template in the editor.
+*/
+package cit260.winter2015.minesweeper.controls;
+import java.io.Serializable;
+import cit260.winter2015.minesweeper.CellManager;
+/**
+*
+* @author andres
+*/
+public class GameMenuControl implements Serializable {
+private static final long serialVersionUID = 1L;
+public GameMenuControl() {
+}
+public static void click() {
+CellManager cm = new CellManager();
+cm.click();
+}
+public static void rightClick() {
+CellManager cm = new CellManager();
+cm.rightClick();
+}
+public static void twoButtonClick() {
+CellManager cm = new CellManager();
+cm.twoButtonClick();
+}
